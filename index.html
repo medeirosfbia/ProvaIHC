@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Manhã</title>
+    <link rel="icon" href="padariaIcon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="padariaIcon.png" alt="Logo da padaria" height="50" width="70" class="me-2">
+                    <span class="fw-bold" style="color:#d2691e; font-size:1.7em;">Delícias da Manhã</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto menu">
+                        <!-- B - Consistência e padrões: todos os itens usam ícones do Bootstrap e estrutura igual -->
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex align-items-center" aria-current="page" href="#" title="Veja nossos doces">
+                                <i class="bi bi-cupcake me-2"></i> <span>Doces</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#" title="Veja nossos salgados">
+                                <i class="bi bi-egg-fried me-2"></i> <span>Salgados</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#" title="Faça sua encomenda">
+                                <i class="bi bi-bag-plus me-2"></i> <span>Encomendas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#" title="Entre em contato">
+                                <i class="bi bi-envelope me-2"></i> <span>Contato</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots me-2"></i> <span>Mais</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#" title="Trabalhe conosco">
+                                        <i class="bi bi-briefcase me-2"></i> <span>Trabalhe Conosco</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#" title="Acesse sua conta">
+                                        <i class="bi bi-person-circle me-2"></i> <span>Conta</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="destaque container my-5">
+        <h1 class="display-4 text-center mb-4">Delícias da Manhã</h1>
+        <div class="destaque-resumo row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="SignoVisualPadaria.png" alt="Imagem da padaria" class="img-fluid rounded shadow" style="max-width:300px; width:60%;">
+            </div>
+            <div class="col-md-8">
+                <p class="lead">Na Delícias da Manhã, a tradição e ...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cardapio container my-5">
+        <h2 class="mb-4" style="color:#d2691e; font-weight:bold; text-align:center;">Cardápio</h2>
+        <div class="text-center mb-4">
+            <img src="padaria02.png" alt="Lanche 1" class="img-fluid rounded" style="max-width:500px; width:100%;">
+        </div>
+        <h3 style="color:#d2691e; font-weight:bold; margin-bottom:20px; margin-top:15px;">Lanches</h3>
+        <div class="row card mb-4 p-3">
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Lanche do Forno</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-success w-100 pedir-btn" title="Peça este lanche">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Lanche do Forno</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-success w-100 pedir-btn" title="Peça este lanche">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Lanche Clássico</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-success w-100 pedir-btn" title="Peça este lanche">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Lanche Bacon & Queijo</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-success w-100 pedir-btn" title="Peça este lanche">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="color:#d2691e; font-weight:bold; margin-bottom:20px; margin-top:15px;">Refeições</h3>
+        <div class="row card mb-4 p-3">
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Frango Assado com Batatas</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-warning w-100 pedir-btn" title="Peça esta refeição">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Feijoada</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-warning w-100 pedir-btn" title="Peça esta refeição">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Marmita Fit</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-warning w-100 pedir-btn" title="Peça esta refeição">Pedir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-food mb-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Strogonoff de Carne</h4>
+                        <p class="card-text">...</p>
+                        <a href="#" class="btn btn-warning w-100 pedir-btn" title="Peça esta refeição">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-3 mt-5" style="background-color:#d2691e !important; color:white !important;">
+        <p class="mb-0">&copy; 2025 Delícias da Manhã - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal de confirmação para prevenção de erros (C) -->
+    <div class="modal fade" id="confirmarPedidoModal" tabindex="-1" aria-labelledby="confirmarPedidoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border: 2px solid #d2691e;">
+          <div class="modal-header" style="background-color:#d2691e; color:white;">
+            <h5 class="modal-title" id="confirmarPedidoLabel">Confirmar Pedido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body" style="color:#6b3a12;">
+            Tem certeza que deseja pedir este item?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn" id="confirmarPedidoBtn" style="background-color:#d2691e; color:white;">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Visibilidade do status do sistema: feedback ao clicar em "Pedir"
+        // C - Prevenção de erros: modal de confirmação antes do pedido
+        let pedidoBtnClicado = null;
+        document.querySelectorAll('.pedir-btn').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                pedidoBtnClicado = btn;
+                // Mostra o modal de confirmação
+                var modal = new bootstrap.Modal(document.getElementById('confirmarPedidoModal'));
+                modal.show();
+            });
+        });
+
+        document.getElementById('confirmarPedidoBtn').addEventListener('click', function() {
+            // Após confirmação, mostra alerta de status
+            let alert = document.createElement('div');
+            alert.className = 'alert position-fixed top-0 start-50 translate-middle-x mt-3 shadow';
+            alert.style.backgroundColor = '#d2691e';
+            alert.style.color = 'white';
+            alert.style.border = '2px solid #a0522d';
+            alert.style.zIndex = 2000;
+            alert.style.minWidth = '250px';
+            alert.innerText = 'A funcionalidade de pedidos ainda não está disponível.';
+            document.body.appendChild(alert);
+            setTimeout(() => {
+                alert.remove();
+            }, 2000);
+            // Fecha o modal
+            var modalEl = document.getElementById('confirmarPedidoModal');
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+        });
+    </script>
+</body>
+
+</html>
